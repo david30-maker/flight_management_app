@@ -17,13 +17,13 @@ class FlightManager
     end
   end
 
-  # def find_flights_between(origin, destination, direction_sensitive)
-  #   if direction_sensitive
-  #     flights.select { |flight| flight[:origin] == origin && flight[:destination] == destination }
-  #   else
-  #     flights.select { |flight| (flight[:origin] == origin && flight[:destination] == destination) ||
-  #       (flight[:origin] == destination && flight[:destination] == origin) }
-  #   end
-  # end
+  def find_flights_between(origin, destination, direction_sensitive)
+    if direction_sensitive
+      flights.select { |flight| flight[:origin] == origin && flight[:destination] == destination }
+    else
+      flights.select { |flight| (flight[:origin] == origin && flight[:destination] == destination) ||
+        (flight[:origin] == destination && flight[:destination] == origin) }
+    end
+  end
 end
 # rubocop:enable Style/Documentation
