@@ -1,7 +1,6 @@
 ## Introduction
 
 You are working on a flight management system that helps travelers to find flights between desired destinations and staff to add flights and generate flight seats.
-
 ## Problem statement
 
 To complete this task you need to implement following methods:
